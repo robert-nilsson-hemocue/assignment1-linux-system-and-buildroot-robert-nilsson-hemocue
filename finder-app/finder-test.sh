@@ -33,7 +33,8 @@ rm -rf "${WRITEDIR}"
 
 # create $WRITEDIR if not assignment1
 assignment=`cat ../conf/assignment.txt`
-
+echo "assignment is $assignment"
+mkdir -p "$WRITEDIR"
 if [ $assignment != 'assignment1' ]
 then
 	mkdir -p "$WRITEDIR"
