@@ -7,7 +7,8 @@ on:
             - '*'
 jobs:
     unit-test:
-        container: github_actions_unit_test
+        container:
+          image: localhost:5000/github_actions_unit_test
         runs-on: self-hosted
         steps:
           - uses: actions/checkout@v2
